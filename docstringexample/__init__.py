@@ -4,8 +4,8 @@
 
 """
 
-import part_1
-import part_2
+import docstringexample.part_1
+import docstringexample.part_1
 
 
 def start():

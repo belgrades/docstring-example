@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>docstringexample package &mdash; docstringexample 1.0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="docstringexample 1.0.1 documentation" href="index.html" />
+    <link rel="up" title="docstringexample" href="modules.html" />
+    <link rel="prev" title="docstringexample" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="docstringexample-package">
+<h1>docstringexample package<a class="headerlink" href="#docstringexample-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-docstringexample.part_1">
+<span id="docstringexample-part-1-module"></span><h2>docstringexample.part_1 module<a class="headerlink" href="#module-docstringexample.part_1" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-part_1"></span><dl class="class">
+<dt id="docstringexample.part_1.MyPublicClass">
+<em class="property">class </em><code class="descclassname">docstringexample.part_1.</code><code class="descname">MyPublicClass</code><span class="sig-paren">(</span><em>foo</em>, <em>bar='baz'</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_1.MyPublicClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>We use this as a public class example class.</p>
+<p>You never call this class before calling <code class="xref py py-func docutils literal"><span class="pre">public_fn_with_sphinxy_docstring()</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">An example of intersphinx is this: you <strong>cannot</strong> use <code class="xref py py-mod docutils literal"><span class="pre">pickle</span></code> on this class.</p>
+</div>
+<dl class="method">
+<dt id="docstringexample.part_1.MyPublicClass.get_foobar">
+<code class="descname">get_foobar</code><span class="sig-paren">(</span><em>foo</em>, <em>bar=True</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_1.MyPublicClass.get_foobar" title="Permalink to this definition">¶</a></dt>
+<dd><p>This gets the foobar</p>
+<p>This really should have a full function definition, but I am too lazy.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">get_foobar</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="go">30</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">get_foobar</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="go">ab</span>
+</pre></div>
+</div>
+<p>Isn&#8217;t that what you want?</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="docstringexample.part_1.public_fn_with_googley_docstring">
+<code class="descclassname">docstringexample.part_1.</code><code class="descname">public_fn_with_googley_docstring</code><span class="sig-paren">(</span><em>name</em>, <em>state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_1.public_fn_with_googley_docstring" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function does something.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name (str):  The name to use.</dd>
+<dt>Kwargs:</dt>
+<dd>state (bool): Current state to be in.</dd>
+<dt>Returns:</dt>
+<dd><p class="first">int.  The return code:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span>0 -- Success!
+1 -- No good.
+2 -- Try again.
+</pre></div>
+</div>
+</dd>
+<dt>Raises:</dt>
+<dd>AttributeError, KeyError</dd>
+</dl>
+<p>A really great idea.  A way you might use me is</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">public_fn_with_googley_docstring</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+<p>BTW, this always returns 0.  <strong>NEVER</strong> use with <code class="xref py py-class docutils literal"><span class="pre">MyPublicClass</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="docstringexample.part_1.public_fn_with_sphinxy_docstring">
+<code class="descclassname">docstringexample.part_1.</code><code class="descname">public_fn_with_sphinxy_docstring</code><span class="sig-paren">(</span><em>name</em>, <em>state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_1.public_fn_with_sphinxy_docstring" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function does something.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>str.</em>) &#8211; The name to use.</li>
+<li><strong>state</strong> (<em>bool.</em>) &#8211; Current state to be in.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">int &#8211; the return code.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">AttributeError, KeyError</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="docstringexample.part_1.public_fn_without_docstring">
+<code class="descclassname">docstringexample.part_1.</code><code class="descname">public_fn_without_docstring</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_1.public_fn_without_docstring" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-docstringexample.part_2">
+<span id="docstringexample-part-2-module"></span><h2>docstringexample.part_2 module<a class="headerlink" href="#module-docstringexample.part_2" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-part_2"></span><dl class="class">
+<dt id="docstringexample.part_2.MyPublicClass">
+<em class="property">class </em><code class="descclassname">docstringexample.part_2.</code><code class="descname">MyPublicClass</code><span class="sig-paren">(</span><em>foo</em>, <em>bar='baz'</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_2.MyPublicClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>We use this as a public class example class.</p>
+<p>You never call this class before calling <code class="xref py py-func docutils literal"><span class="pre">public_fn_with_sphinxy_docstring()</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">An example of intersphinx is this: you <strong>cannot</strong> use <code class="xref py py-mod docutils literal"><span class="pre">pickle</span></code> on this class.</p>
+</div>
+<dl class="method">
+<dt id="docstringexample.part_2.MyPublicClass.get_foobar">
+<code class="descname">get_foobar</code><span class="sig-paren">(</span><em>foo</em>, <em>bar=True</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_2.MyPublicClass.get_foobar" title="Permalink to this definition">¶</a></dt>
+<dd><p>This gets the foobar</p>
+<p>This really should have a full function definition, but I am too lazy.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">get_foobar</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="go">30</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">get_foobar</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="go">ab</span>
+</pre></div>
+</div>
+<p>Isn&#8217;t that what you want?</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="docstringexample.part_2.public_fn_with_googley_docstring">
+<code class="descclassname">docstringexample.part_2.</code><code class="descname">public_fn_with_googley_docstring</code><span class="sig-paren">(</span><em>name</em>, <em>state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_2.public_fn_with_googley_docstring" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function does something.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>name (str):  The name to use.</dd>
+<dt>Kwargs:</dt>
+<dd>state (bool): Current state to be in.</dd>
+<dt>Returns:</dt>
+<dd><p class="first">int.  The return code:</p>
+<div class="last highlight-default"><div class="highlight"><pre><span></span>0 -- Success!
+1 -- No good.
+2 -- Try again.
+</pre></div>
+</div>
+</dd>
+<dt>Raises:</dt>
+<dd>AttributeError, KeyError</dd>
+</dl>
+<p>A really great idea.  A way you might use me is</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">public_fn_with_googley_docstring</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="n">state</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+<p>BTW, this always returns 0.  <strong>NEVER</strong> use with <code class="xref py py-class docutils literal"><span class="pre">MyPublicClass</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="docstringexample.part_2.public_fn_with_sphinxy_docstring">
+<code class="descclassname">docstringexample.part_2.</code><code class="descname">public_fn_with_sphinxy_docstring</code><span class="sig-paren">(</span><em>name</em>, <em>state=None</em><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_2.public_fn_with_sphinxy_docstring" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function does something.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<em>str.</em>) &#8211; The name to use.</li>
+<li><strong>state</strong> (<em>bool.</em>) &#8211; Current state to be in.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">int &#8211; the return code.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last">AttributeError, KeyError</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="docstringexample.part_2.public_fn_without_docstring">
+<code class="descclassname">docstringexample.part_2.</code><code class="descname">public_fn_without_docstring</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.part_2.public_fn_without_docstring" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-docstringexample">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-docstringexample" title="Permalink to this headline">¶</a></h2>
+<p>Just some random thoughts.</p>
+<dl class="function">
+<dt id="docstringexample.start">
+<code class="descclassname">docstringexample.</code><code class="descname">start</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#docstringexample.start" title="Permalink to this definition">¶</a></dt>
+<dd><p>This should be something useful ...</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">docstringexample package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-docstringexample.part_1">docstringexample.part_1 module</a></li>
+<li><a class="reference internal" href="#module-docstringexample.part_2">docstringexample.part_2 module</a></li>
+<li><a class="reference internal" href="#module-docstringexample">Module contents</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">docstringexample</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">docstringexample</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/docstringexample.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Fernando Crema.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      
+      |
+      <a href="_sources/docstringexample.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
